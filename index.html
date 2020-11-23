@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Убери кубики</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-field">
+        <header class="head">
+          <h2 class="title">Убери кубики</h2>
+          <div class="game-control">
+            <div>
+            <button class="btn btn-start">Start</button>
+            <button class="btn btn-Ngame">New game</button>
+          </div>
+            <span class="points">0</span>
+            <span class="time">0</span>
+          </div>
+        </header>
+        <section class="playing_field"></section>
+      </div>
+      <aside class="result-table">
+        <div class="description">
+          <div class="blue square"></div><span class="desc-point">4 points</span>
+          <div class="green square"></div><span class="desc-point">3 points</span>
+          <div class="red square"></div><span class="desc-point">2 points</span>
+          <div class="white square"></div><span class="desc-point">1 point</span>
+        </div>    
+        <button class="btn btn-clear">Clear score</button>
+      </aside>
+    </div>
+
+    <div class="popup-wrap">
+      <div class="popup">
+        <h3 class="popup-score">Lorem</h3> 
+        <div class="popup__text">
+          <label class="popup__text" for="name">Name</label>
+          <input class="popup__text" id="name" type="text" />
+        </div>
+        <button class="btn popup-save">Save</button>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

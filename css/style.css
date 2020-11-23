@@ -1,0 +1,158 @@
+* {
+  background: rgb(17, 167, 204);
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+.game-field {
+  margin: 0 75px;
+  flex-basis: 60%;
+}
+.game-control {
+  display: flex;
+  justify-content: space-between;
+}
+.head {
+  padding: 10px;
+}
+.title {
+  font-size: 25px;
+  color: aliceblue;
+}
+.btn {
+  padding: 5px 15px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+}
+.points {
+  display: inline-block;
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #000;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+.points::before {
+  content: 'Points';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  font-size: 15px;
+}
+.time {
+  display: inline-block;
+  width: 50px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  position: relative;
+  text-align: center;
+}
+.time::before {
+  content: 'Time left';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  font-size: 15px;
+}
+.place {
+  border-collapse: separate;
+  border-spacing: 27px;
+  border: 1px solid black;
+}
+td {
+  width: 40px;
+  height: 40px;
+}
+
+.blue {
+  border: 1px solid black;
+  background-color: blue;
+  box-shadow: 1px -0px blue, 1px -1px blue, 2px -1px blue, 2px -2px blue,
+    3px -2px blue, 3px -3px blue, 4px -3px blue, 4px -4px blue, 5px -4px blue,
+    5px -5px blue, 6px -5px blue, 6px -6px blue, 7px -6px blue, 7px -7px blue;
+}
+
+.green {
+  border: 1px solid black;
+  background-color: green;
+  box-shadow: 1px -0px green, 1px -1px green, 2px -1px green, 2px -2px green,
+    3px -2px green, 3px -3px green, 4px -3px green, 4px -4px green,
+    5px -4px green, 5px -5px green, 6px -5px green, 6px -6px green,
+    7px -6px green, 7px -7px green;
+}
+
+.white {
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 1px -0px white, 1px -1px white, 2px -1px white, 2px -2px white,
+    3px -2px white, 3px -3px white, 4px -3px white, 4px -4px white,
+    5px -4px white, 5px -5px white, 6px -5px white, 6px -6px white,
+    7px -6px white, 7px -7px white;
+}
+.red {
+  border: 1px solid black;
+  background-color: red;
+  box-shadow: 1px -0px red, 1px -1px red, 2px -1px red, 2px -2px red,
+    3px -2px red, 3px -3px red, 4px -3px red, 4px -4px red, 5px -4px red,
+    5px -5px red, 6px -5px red, 6px -6px red, 7px -6px red, 7px -7px red;
+}
+.popup-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.popup-wrap_active {
+  display: flex;
+}
+.popup {
+  width: 350px;
+  padding: 15px 25px;
+  border-radius: 7px;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-score,
+.popup__text {
+  background-color: #fff;
+}
+.popup-save {
+  margin: 15px;
+}
+/*------таблица результатов--------------------*/
+.result-table {
+  flex-basis: 20%;
+  padding: 15px;
+}
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.square {
+  margin: 10px;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+}
+.desc-point {
+  flex-basis: 50%;
+  font-size: 25px;
+}
